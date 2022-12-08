@@ -1,0 +1,60 @@
+<section>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-8 col-xl-6">
+                <div class="row">
+                    <div class="col text-center">
+                        <h1>Agregar Ventas</h1>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col mt-4">
+                        <label for="idventas">N° Venta: </label>
+                        <input type="text" [(ngModel)]="ventas.idVentas" class="from_control" name="idventas">
+                    </div>
+                </div>
+                <div class="row align-items-center mt-4">
+                    <div class="col">
+                        <label for="numComprobante">Num Comprobate: </label>
+                        <input type="text" [(ngModel)]="ventas.numeroDeComprobante" class="from_control" name="numComprobante">
+                    </div>
+                </div>
+                <div class="row align-items-center mt-4">
+                    <div class="col">
+                        <label for="fecha">Fecha: </label>
+                        <input type="date" [(ngModel)]="ventas.fecha" class="from_control" name="fecha">
+                    </div>
+                </div>
+                <div class="row align-items-center mt-4">
+                    <div class="col">
+                        <label for="cantidad">Cantidad: </label>
+                        <input type="number" class="from_control" [(ngModel)]="ventas.cantidad" name="cantidad">
+                    </div>
+                </div>
+
+                <div class="row align-items-center mt-4">
+                    <div class="col">
+                        <label for="precio">Precio: </label>
+                        <input type="number" class="from_control" [(ngModel)]="ventas.precio" name="precio">
+                    </div>
+                    <div class="col">
+                        <label for="totalventas">Total Ventas: </label>
+                        <input type="number" [(ngModel)]="ventas.totalVentas" class="from_control" name="totalventas">
+                    </div>
+                </div>
+                <div class="row align-items-center mt-4">
+                    <div class="col">
+                        <label for="">Cliente: </label>
+                        <input type="number" class="from_control" name="">
+                    </div>
+                </div>
+                <div class="row justify-content-start mt-4">
+                    <div class="col">
+                        <button (click)="Generar()" class="btn btn-success" red><a
+                                href="http://localhost:4200/all/venta">Guardar</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
